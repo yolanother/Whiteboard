@@ -4,49 +4,13 @@
 <script
 	src="//www.gstatic.com/cast/sdk/libs/receiver/2.0.0/cast_receiver.js"></script>
 </head>
-<body marginheight="0" marginwidth="0">
-	<div id="container" width="1920" height="1080"></canvas>
-
-    <script src="//d3lp1msu2r81bx.cloudfront.net/kjs/js/lib/kinetic-v5.0.1.min.js"></script>
-	<script>
-	var stage = new Kinetic.Stage({
-        container: 'container',
-        width: 1920,
-        height: 1080
-      });
-
-      var layer = new Kinetic.Layer();
-
-      var redSpline = new Kinetic.Line({
-        points: [73,160,340,23,500,109,300,109],
-        stroke: 'red',
-        strokeWidth: 10,
-        lineCap: 'round',
-        tension: 0.5
-      });
-
-      var greenSpline = new Kinetic.Line({
-        points: [20,50,340,50,200,150,250,150, 1920, 1080, 0, 1080],
-        stroke: 'green',
-        strokeWidth: 5,
-        lineCap: 'round',
-        tension: .1,
-        dash: [10, 10]
-      });
-
-      layer.add(blueSpline);
-      layer.add(redSpline);
-      layer.add(greenSpline);
-      stage.add(layer);
-  </script>
-Some text...
-
-    <canvas id="myCanvas" width="578" height="200"></canvas>
+<body marginheight="0" marginwidth="0" bgcolor="black">
+    <div style="background-color: white">
+        <canvas id="myCanvas" width="1920" height="1080"></canvas></div>
     <script>
       var canvas = document.getElementById('myCanvas');
       var context = canvas.getContext('2d');
 
-      function drawLine(
       context.beginPath();
       context.moveTo(100, 150);
       context.lineTo(450, 50);
