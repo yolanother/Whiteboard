@@ -7,8 +7,8 @@
 <body marginheight="0" marginwidth="0">
 	<div id="container" width="1920" height="1080"></canvas>
 
-    <script src="javascripts/kinetic-v5.0.1.min.js"></script>
-	<script defer="defer">
+    <script src="//d3lp1msu2r81bx.cloudfront.net/kjs/js/lib/kinetic-v5.0.1.min.js"></script>
+	<script>
 	var stage = new Kinetic.Stage({
         container: 'container',
         width: 1920,
@@ -46,6 +46,7 @@ Some text...
       var canvas = document.getElementById('myCanvas');
       var context = canvas.getContext('2d');
 
+      function drawLine(
       context.beginPath();
       context.moveTo(100, 150);
       context.lineTo(450, 50);
